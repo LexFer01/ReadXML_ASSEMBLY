@@ -1,0 +1,41 @@
+site_name: Assembly Calculator
+nav:
+    - Inicio: index.md
+    - Macros:
+      - Manejo de Archivos: macros/files.md
+      - Propósito General: macros/macros.md
+    - Procedimientos: proc.md
+    - Analísis: analysis.md
+    - Acerda De y Referencias: about.md
+
+theme:
+  name: material 
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+copyright: Por Alex Méndez
+
+#     # Light mode
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       primary: indigo
+#       accent: indigo
+#       toggle
+# :
+#         icon: material/toggle-switch-off-outline
+#         name: Switch to dark mode
+
+#     # Dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       primary: blue
+#       accent: blue
+#       toggle:
+#         icon: material/toggle-switch
+#         name: Switch to light mode
