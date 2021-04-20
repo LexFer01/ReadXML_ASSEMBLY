@@ -6,6 +6,24 @@ En este apartado se encuentran varios macros de propósito general que son utili
 
 Algunas de las macros descrita en este apartado fueron implementados usando la **interrupción (INT) 21h**
 
+## IMPORTANTE 
+
+En varias de siguientes macros se usaran instrucciones primitivas que nos permite manejar o procesar de forma fácil grandes bloques de datos, por lo cual es de suma importancia el uso del segmento **EXTRA DATA (es)**, si revisamos el main al incio de la proc main hay una línea de código en la cual hacemos uso del segmento extra data.
+
+```nasm
+main PROC
+
+        MOV dx, @data
+        MOV ds, dx          ;; uso del segmento de datos (DS)
+        MOV es, dx          ;; uso del segmento extra dato (es)
+
+        ;; ... 
+        ;; ...
+        ;; .. más código
+
+main ENDP
+```
+
 ---
 
 ## Visualización de un carácter en pantalla
